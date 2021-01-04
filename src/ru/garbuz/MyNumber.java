@@ -9,5 +9,4 @@ import lombok.Setter;
 public class MyNumber {
     private Integer integerValue;
     private String stringValue;
-    private TypeNumber type;
 }

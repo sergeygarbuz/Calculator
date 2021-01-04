@@ -5,14 +5,13 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-        String result = null;
+        String result = "";
         Scanner scanner = new Scanner(System.in);
         for (;;) {
             System.out.print("Введите выражение: ");
             String stringExpression = scanner.nextLine();
-            MyExpression expression = new MyExpression();
             try {
-                expression = expression.parseExpression(stringExpression);
+                MyExpression expression = new MyExpression(stringExpression);
                 switch (expression.getResultType()){
                     case ROMAN:
                         result = expression.getRomanResult();
