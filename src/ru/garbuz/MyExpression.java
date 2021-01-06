@@ -166,10 +166,11 @@ public class MyExpression {
                 if (b.getIntegerValue()==0) {
                     throw new Exception("Делить на ноль нельзя");
                 }
-                else if (a.getIntegerValue()%b.getIntegerValue()==0){
-                    return a.getIntegerValue()/b.getIntegerValue();
-                }
-                throw new Exception("Ответ должен быть целым числом");
+                return a.getIntegerValue()/b.getIntegerValue();
+//                else if (a.getIntegerValue()%b.getIntegerValue()==0){
+//                    return a.getIntegerValue()/b.getIntegerValue();
+//                }
+//                throw new Exception("Ответ должен быть целым числом");
         }
         throw new Exception("Неизвестное действие в методе getResult()");
     }
